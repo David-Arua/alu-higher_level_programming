@@ -1,5 +1,10 @@
 #!/usr/bin/python3
-print_reversed_list_integer = __import__('3-print_reversed_list_integer').print_reversed_list_integer
+def print_reversed_list_integer(my_list=[]):
+    if my_list is None:
+        pass
+    else:
+        my_list.sort(reverse=True)
+        for i in my_list:
+            print("{:d}".format(i))
 
-my_list = [1, 2, 3]
-print_reversed_list_integer(my_list)
+print_reversed_list_integer()
