@@ -18,4 +18,3 @@ if __name__ == '__main__':
     state = session.query(State).order_by(State.id).first()
 
     print("Nothing" if not state else "{}: {}".format(state.id, state.name))
-    
